@@ -1,0 +1,10 @@
+# Este es un archivo de configuración SSH INSECURO para pruebas
+Port 22
+Protocol 2
+PermitRootLogin yes
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+ChallengeResponseAuthentication yes
+UsePAM yes
+X11Forwarding yes
+ClientAliveInterval 0
