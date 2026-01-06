@@ -53,7 +53,7 @@ Prerrequisitos
     Git (para clonación)
 
 Instalación Rápida
-bash
+```bash
 
 # 1. Clona el repositorio
 git clone https://github.com/mrodripy/ssh-config-auditor.git
@@ -121,3 +121,4 @@ Distribuido bajo la Licencia MIT.
 Miguel Rodríguez - GitHub
 
 ⭐ Si este proyecto te es útil, ¡dale una estrella en GitHub!
+
