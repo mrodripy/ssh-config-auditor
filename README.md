@@ -34,7 +34,6 @@ $ python src/ssh_audit.py samples/insecure_sshd_config
 [+] Auditoría completada: 12 hallazgos
 
 Reporte de Ejemplo
-text
 
 ============================================================
 SSH CONFIGURATION AUDIT REPORT
@@ -240,3 +239,4 @@ Tu Nombre
     Python community por las herramientas increíbles
 
 ⭐ Si este proyecto te es útil, ¡dale una estrella en GitHub!
+
