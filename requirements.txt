@@ -1,0 +1,4 @@
+# Dependencias principales
+argparse>=1.4.0
+# Añade aquí otras librerías que use tu proyecto
+# Ejemplo: PyYAML>=6.0, colorama>=0.4.6
