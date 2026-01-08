@@ -20,12 +20,13 @@ Herramienta profesional en Python para auditar y asegurar configuraciones SSH (`
 
 ## 📸 Demostración Rápida
 ## ✅ CI/CD Pipeline Status
-Nuestro pipeline de integración continua se ejecuta automáticamente en cada commit a la rama principal, verificando:
 - ✅ Pruebas automatizadas (`make test`)
 - ✅ Construcción de imagen Docker
 - ✅ Compatibilidad con los últimos sistemas
   
 ![Ejecución exitosa de GitHub Actions](docs/ci-success.png)
+
+*Nuestro pipeline de integración continua se ejecuta automáticamente en cada `push` a la rama principal, ejecutando las pruebas y construyendo la imagen Docker.*
 ### Ejecución Básica
 ```bash
 python src/ssh_audit.py samples/insecure_sshd_config
