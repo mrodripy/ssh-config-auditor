@@ -1,0 +1,24 @@
+============================================================
+SSH CONFIGURATION AUDIT REPORT
+============================================================
+✅ Protocol: Expected='2', Actual='2' | Status: COMPLIANT (LOW)
+❌ PermitRootLogin: Expected='no', Actual='yes' | Status: NON_COMPLIANT (HIGH)
+❌ PasswordAuthentication: Expected='no', Actual='yes' | Status: NON_COMPLIANT (HIGH)
+❌ PermitEmptyPasswords: Expected='no', Actual='yes' | Status: NON_COMPLIANT (MEDIUM)
+❌ ChallengeResponseAuthentication: Expected='no', Actual='yes' | Status: NON_COMPLIANT (MEDIUM)
+✅ UsePAM: Expected='yes', Actual='yes' | Status: COMPLIANT (LOW)
+❌ X11Forwarding: Expected='no', Actual='yes' | Status: NON_COMPLIANT (MEDIUM)
+❌ ClientAliveInterval: Expected='300', Actual='0' | Status: NON_COMPLIANT (MEDIUM)
+🔶 ClientAliveCountMax: Expected='3', Actual='None' | Status: NOT_SET (MEDIUM)
+🔶 MaxAuthTries: Expected='3', Actual='None' | Status: NOT_SET (MEDIUM)
+🔶 LoginGraceTime: Expected='60', Actual='None' | Status: NOT_SET (MEDIUM)
+🔶 AllowUsers: Expected='None', Actual='None' | Status: NOT_SET (MEDIUM)
+
+============================================================
+SUMMARY
+============================================================
+Total Rules Checked: 12
+✅ Compliant: 2
+❌ Non-Compliant: 6
+⚠️  Not Found in Config: 0
+🔶 Not Set (Missing): 4

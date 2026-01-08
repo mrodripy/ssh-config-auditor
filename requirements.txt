@@ -1,4 +1,10 @@
+#<<<<<<< HEAD
 # Dependencias principales
 argparse>=1.4.0
 # Añade aquí otras librerías que use tu proyecto
 # Ejemplo: PyYAML>=6.0, colorama>=0.4.6
+#=======
+# Dependencies for SSH Configuration Auditor
+# This project currently uses only the Python standard library.
+# Future dependencies (for Phase 2: Docker, web dashboard, etc.) will be listed here.
+#>>>>>>> c206a8f323494a9051d9a42ed5abc7d5d2fc396e
