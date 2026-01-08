@@ -1,0 +1,49 @@
+name: CI/CD Pipeline for SSH Auditor
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  # Permite ejecutarlo manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: "🔍 Run Tests"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      # Usa tu Makefile para ejecutar las pruebas dentro del contenedor
+      - name: 🧪 Run Auditor Test
+        run: make test
+
+  build:
+    name: "🐳 Build Docker Image"
+    runs-on: ubuntu-latest
+    # Este trabajo solo se ejecuta si las pruebas pasan
+    needs: test
+    if: success()
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🏗️ Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: 🐋 Build Docker Image
+        # Usa la acción oficial de Docker para construir[citation:3]
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          tags: ssh-auditor:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          # Por ahora solo construye, NO sube a ningún registro
+          push: false
+          load: true # Hace que la imagen esté disponible en el runner
