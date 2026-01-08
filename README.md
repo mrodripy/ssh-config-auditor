@@ -20,7 +20,11 @@ Herramienta profesional en Python para auditar y asegurar configuraciones SSH (`
 - ✅ **Pruebas unitarias**: Cobertura para funcionalidad principal
 
 ## 📸 Demostración Rápida
+## ✅ CI/CD Status
 
+Nuestro pipeline de integración continua se ejecuta automáticamente en cada commit:
+
+![Ejecución exitosa de GitHub Actions](docs/ci-success.png)
 ### Ejecución Básica
 ```bash
 python src/ssh_audit.py samples/insecure_sshd_config
