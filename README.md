@@ -24,6 +24,7 @@ Nuestro pipeline de integración continua se ejecuta automáticamente en cada co
 - ✅ Pruebas automatizadas (`make test`)
 - ✅ Construcción de imagen Docker
 - ✅ Compatibilidad con los últimos sistemas
+  
 ![Ejecución exitosa de GitHub Actions](docs/ci-success.png)
 ### Ejecución Básica
 ```bash
