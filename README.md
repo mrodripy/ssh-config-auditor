@@ -19,10 +19,11 @@ Herramienta profesional en Python para auditar y asegurar configuraciones SSH (`
 - ✅ **Pruebas unitarias**: Cobertura para funcionalidad principal
 
 ## 📸 Demostración Rápida
-## ✅ CI/CD Status
-
-Nuestro pipeline de integración continua se ejecuta automáticamente en cada commit:
-
+## ✅ CI/CD Pipeline Status
+Nuestro pipeline de integración continua se ejecuta automáticamente en cada commit a la rama principal, verificando:
+- ✅ Pruebas automatizadas (`make test`)
+- ✅ Construcción de imagen Docker
+- ✅ Compatibilidad con los últimos sistemas
 ![Ejecución exitosa de GitHub Actions](docs/ci-success.png)
 ### Ejecución Básica
 ```bash
